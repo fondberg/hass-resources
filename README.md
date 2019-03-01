@@ -1,6 +1,9 @@
 # hass-resources
 Various home-assistant resources
 
+## Pushbullet SMS script
+See https://github.com/fondberg/hass_pushbullet_sms
+
 ## Dim toggle
 A small python script which cycles between different levels for the lights sent in as entitits
 
