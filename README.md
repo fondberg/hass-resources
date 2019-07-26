@@ -6,6 +6,8 @@ See https://github.com/fondberg/hass_pushbullet_sms
 
 ## Battery checker
 Script to check all batteries in the system. This adds a sensor called `sensor.battery_checker` with an integer as value which represents the number of devices has lower battery level than the `threshold`(default 40). If there were any devices with lower battery they will be added as attributes with their level to the state object.
+### Installation
+Install it by downloading it and copy it to `config/python_scripts/battery_checker.py`
 
 ### Automation
 An example automation for it:
@@ -24,7 +26,7 @@ An example automation for it:
 A small python script which cycles between different levels for the lights sent in as entitits
 
 ### Installation
-Install it by downloading it and copy it to `config/pyhton_scripts`
+Install it by downloading it and copy it to `config/python_scripts/dim_toggle.py`
 
 ### Automation
 An example automation for it:
