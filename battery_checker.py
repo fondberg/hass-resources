@@ -7,9 +7,7 @@ logger.info("battery_checker: threshold: " + str(threshold))
 low_battery_entitites = {}
 
 for state in hass.states.all():
-    
     level = state.attributes.get('battery_level') or None
-    #logger.info("Got state: %s = %s", state.entity_id, level)
     if level is not None and int(level) <= threshold:
         logger.info("battery checker: %s %s", state.entity_id, level)
         low_battery_entitites[state.entity_id] = level
